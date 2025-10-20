@@ -1,0 +1,144 @@
+[
+  {
+    "input": "This is ridiculous \u2014 the app crashed at checkout again and I want a refund now. It\u2019s basically broken.",
+    "analysis": {
+      "sentiment": "negative",
+      "emotions": {
+        "anger": 0.5263157894736842,
+        "urgency": 0.42105263157894735,
+        "sarcasm": 0.0
+      },
+      "intents": [
+        "refund_request",
+        "product_defect"
+      ],
+      "characteristics": [
+        "angry",
+        "urgent",
+        "refund_seeking",
+        "defect_reported"
+      ]
+    },
+    "similar_cases": [
+      {
+        "text": "App crashes on checkout, lost my cart twice.",
+        "category": "app_crash",
+        "resolution": "Issued 15% off code and logged bug ticket"
+      },
+      {
+        "text": "Package arrived late and box was damaged.",
+        "category": "shipping",
+        "resolution": "Refunded shipping and reshipped item"
+      }
+    ],
+    "output": "We're truly sorry about this experience. I'll keep the tone calm and empathetic.\nSummary I captured: angry, urgent, refund_seeking, defect_reported.\nWhat I can do now: I can start a refund right away. Let's replace the item and log this defect for engineering. I'll prioritize this and get back today.\nSimilar past issues consulted: app_crash; shipping.\nReference: NC-20251020-820186F3"
+  },
+  {
+    "input": "Package showed up 5 days late with a crushed box. Yeah right, 'premium shipping'.",
+    "analysis": {
+      "sentiment": "negative",
+      "emotions": {
+        "anger": 0.0,
+        "urgency": 0.0,
+        "sarcasm": 1.0
+      },
+      "intents": [],
+      "characteristics": [
+        "sarcastic"
+      ]
+    },
+    "similar_cases": [
+      {
+        "text": "Package arrived late and box was damaged.",
+        "category": "shipping",
+        "resolution": "Refunded shipping and reshipped item"
+      },
+      {
+        "text": "Support never replied, waited 5 days!",
+        "category": "support_delay",
+        "resolution": "Escalated to Tier 2 and apologized"
+      }
+    ],
+    "output": "We're truly sorry about this experience. I'll keep the tone calm and empathetic.\nSummary I captured: sarcastic.\nWhat I can do now: I'll investigate and update you with options.\nSimilar past issues consulted: shipping; support_delay.\nReference: NC-20251020-B72C14D3"
+  },
+  {
+    "input": "I need to cancel my order today, wrong size was sent even though the confirmation showed the right one.",
+    "analysis": {
+      "sentiment": "tense",
+      "emotions": {
+        "anger": 0.0,
+        "urgency": 0.42105263157894735,
+        "sarcasm": 0.0
+      },
+      "intents": [
+        "cancellation"
+      ],
+      "characteristics": [
+        "urgent",
+        "cancellation_intent"
+      ]
+    },
+    "similar_cases": [
+      {
+        "text": "Wrong size sent even after confirmation email.",
+        "category": "fulfillment",
+        "resolution": "Sent prepaid return label and correct size"
+      },
+      {
+        "text": "Package arrived late and box was damaged.",
+        "category": "shipping",
+        "resolution": "Refunded shipping and reshipped item"
+      }
+    ],
+    "output": "Thanks for reaching out about this experience. I'll keep the tone calm and empathetic.\nSummary I captured: urgent, cancellation_intent.\nWhat I can do now: I'll prioritize this and get back today.\nSimilar past issues consulted: shipping; fulfillment.\nReference: NC-20251020-8F667ECB"
+  },
+  {
+    "input": "The device overheats after about 20 minutes of video calls. Can you help replace it?",
+    "analysis": {
+      "sentiment": "neutral",
+      "emotions": {
+        "anger": 0.0,
+        "urgency": 0.0,
+        "sarcasm": 0.0
+      },
+      "intents": [
+        "product_defect"
+      ],
+      "characteristics": [
+        "defect_reported"
+      ]
+    },
+    "similar_cases": [
+      {
+        "text": "Battery dies after 2 hours, device overheats.",
+        "category": "battery",
+        "resolution": "Offered replacement and extended warranty"
+      },
+      {
+        "text": "Wrong size sent even after confirmation email.",
+        "category": "fulfillment",
+        "resolution": "Sent prepaid return label and correct size"
+      }
+    ],
+    "output": "Thanks for reaching out about this experience. I'll keep the tone calm and empathetic.\nSummary I captured: defect_reported.\nWhat I can do now: Let's replace the item and log this defect for engineering.\nSimilar past issues consulted: fulfillment; battery.\nReference: NC-20251020-1DDF5A3F"
+  },
+  {
+    "input": "I\u2019d just like a refund for this order; it isn\u2019t what I expected.",
+    "analysis": {
+      "sentiment": "neutral",
+      "emotions": {
+        "anger": 0.0,
+        "urgency": 0.0,
+        "sarcasm": 0.0
+      },
+      "intents": [
+        "refund_request"
+      ],
+      "characteristics": [
+        "refund_seeking"
+      ]
+    },
+    "similar_cases": [],
+    "output": "Thanks for reaching out about this experience. I'll keep the tone calm and empathetic.\nSummary I captured: refund_seeking.\nWhat I can do now: I can start a refund right away.\nSimilar past issues consulted: none.\nReference: NC-20251020-DBA36EC7"
+  }
+]

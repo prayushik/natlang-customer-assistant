@@ -1,0 +1,2 @@
+openai>=1.46.0
+matplotlib>=3.7.0
