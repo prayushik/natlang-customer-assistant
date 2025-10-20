@@ -1,30 +1,24 @@
-# Natlang – Assignment 6 Code Bundle
+# NatLang Customer Complaint Assistant
 
-## Quick Start (Windows PowerShell or VS Code Terminal)
-```powershell
-python -m venv .venv
-. .venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-$env:OPENAI_API_KEY="sk-...yourkey..."   # optional; falls back to local composer if not set
-python natlang.py
-```
-Screenshots and JSON will be saved to `./natlang_artifacts/`.
+An AI-powered assistant that analyzes customer messages for **sentiment**, **intent**, and **urgency**, then generates **empathetic responses** with traceable case references.
 
-## Quick Start (macOS/Linux)
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-export OPENAI_API_KEY="sk-...yourkey..."   # optional; falls back if not set
-python natlang.py
-```
+---
 
-## Files
-- `natlang.py` – full pipeline (OpenAI call with fallback) + demo for 5 examples
-- `requirements.txt` – dependencies
-- `run_demo.bat` / `run_demo.sh` – one-step helpers
-- Output folder: `natlang_artifacts/` (created on first run)
+## 💡 Features
+- Emotion detection (anger, frustration, sarcasm, urgency)
+- Intent classification (refunds, technical issues, delivery problems)
+- GPT-based response generation
+- Modular code for easy expansion to other domains
 
-## Notes
-- If `OPENAI_API_KEY` is not set, the app uses a deterministic fallback composer, still saving PNGs and JSON.
-- Replace the five example strings in `demo()` if you want to test custom scenarios.
+---
+
+## 🧠 Tech Stack
+`Python` · `Regex` · `OpenAI API` · `JSON` · `Sentiment Analysis` · `Prompt Engineering`
+
+---
+
+## ▶️ How to Run
+1. Create a virtual environment:
+   ```bash
+   python -m venv .venv
+   .\.venv\Scripts\activate
